@@ -1,2 +1,1 @@
-this is third txt file
-s
+this is third file
