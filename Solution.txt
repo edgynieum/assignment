@@ -1,0 +1,58 @@
+1. Create a local repository and 3 text files into it.
+>$ git init ashu
+>$ notepad t1.txt
+>$ notepad t2.txt
+>$ notepad t3.txt
+
+
+2. Create 2 braches as Dev and Test.
+>$ git remote add origin https://github.com/edgynieum/assignment.git
+>$ git branch Dev
+>$ git branch Test
+
+3. Commit 1 file into Dev and 2 files into Test.
+>$ git checkout Dev
+>$ git add t1.txt
+>$ git commit -m "t1.txt commited to Dev branch"
+
+>$ git checkout Test
+>$ git add .
+>$ git commit -m "t2.txt and t3.txt commited to Test branch"
+
+4. Modify 1st file some text.
+>$ git checkout Dev
+>$ notepad t1.txt
+//changed content and saved the file
+
+5. Check differences and status.
+$ git diff t1.txt
+
+-this is first text file
+\ No newline at end of file
++this is 1st text file
+\ No newline at end of file
+
+>$ git status
+>$ git add t1.txt
+>$ git commit -m "commited modified t1.txt in Dev branch"
+
+6. Finally merge all together in a master branch.
+>$ git checkout master
+>$ git merge Dev
+>$ git merge Test
+
+7. Push this repository on your github.
+>$ git branch -M main
+>$ git push -u origin main
+
+8. Create a clone for this repo from github to local system with another location.
+>$ git init newLocation
+>$ cd newLocation
+>$ git clone --mirror https://github.com/edgynieum/assignment.git
+
+9. Create a new file as Solution.txt in this cloned repository. 
+>$ notepad Solution.txt
+
+10. Add all commands you have done for above in this Solution.txt file. done
+11. Push the changes to github again in same repository. 
+12. Share me the link of this reposirory from your github which includes 3 files and Solution.txt for assesment. 
