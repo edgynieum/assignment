@@ -46,13 +46,14 @@ $ git diff t1.txt
 >$ git push -u origin main
 
 8. Create a clone for this repo from github to local system with another location.
->$ git init newLocation
->$ cd newLocation
+
 >$ git clone --mirror https://github.com/edgynieum/assignment.git
+>$ cd assignment/
 
 9. Create a new file as Solution.txt in this cloned repository. 
->$ notepad Solution.txt
 
-10. Add all commands you have done for above in this Solution.txt file. done
-11. Push the changes to github again in same repository. 
-12. Share me the link of this reposirory from your github which includes 3 files and Solution.txt for assesment. 
+>$ notepad Solution.txt
+>$ git add Solution.txt
+>$ git commit -m "added Solution.txt"
+>$ git push -u origin main
+
